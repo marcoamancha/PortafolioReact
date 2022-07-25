@@ -10,7 +10,7 @@ const About = () => {
   return (
     <>
       {loader ? (<Loader />) : (
-        <div className="grid content-start sm:content-center justify-center w-full h-screen">
+        <div className="grid content-center justify-center px-4 w-full h-screen">
           <h1 className="text-white text-center sm:text-left md:text-5xl font-bold mb-2"><span className="text-red-600">[</span> Sobre Mi <span className="text-red-600">]</span></h1>       
           <p className='text-white mt-4 text-xl'>Ingeniero en Sistemas, apasionado por el</p>
           <p className='text-white text-xl'>Desarrollo Web. Me considero una persona</p>

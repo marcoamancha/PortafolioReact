@@ -14,7 +14,7 @@ const Home = () => {
       {loader ? (
         <Loader />
       ) : (
-        <div className="grid content-start sm:content-center justify-center w-full h-screen">
+        <div className="grid content-center justify-center w-full h-screen">
           <h1 className="text-white md:text-5xl font-bold mb-2">
             <Typical
               steps={["Hola,", 3000, "Saludos,", 3000]}
@@ -28,7 +28,7 @@ const Home = () => {
           <h1 className="text-white md:text-5xl font-bold mb-2">
             Desarrollador Web
           </h1>
-          <h2 className="text-slate-300">Desaroolador Fron End</h2>
+          <h2 className="text-slate-300">Desarrolador FronEnd</h2>
           <a
             href="https://wa.me/593983841134"
             target="_blank"

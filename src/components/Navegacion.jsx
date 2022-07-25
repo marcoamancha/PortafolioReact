@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Navegacion = () => {
   return (
-    <div className="bg-stone-900 w-40 text-white flex flex-col">
+    <div className="bg-stone-900 w-30 sm:w-40 text-white flex flex-col">
       <div className="bg-stone-800 py-5">
         <h1 className="text-center font-bold text-xl sm:text-4xl font-MyFont">
           M
