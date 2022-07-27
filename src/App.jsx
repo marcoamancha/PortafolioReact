@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { HashRouter, Route, Routes } from "react-router-dom"
 import Navegacion from "./components/Navegacion"
 import About from "./pages/About"
 import Home from "./pages/Home"
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="bg-cover bg-center bg-[url('/fondo.jpg')] bg-slate-700 flex">      
       {/* Rutas de mi aplicacion */}
-      <BrowserRouter>
+      <HashRouter>
         <Navegacion />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -20,7 +20,7 @@ function App() {
           <Route path="/proyectos" element={<Proyectos />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   )
 }
