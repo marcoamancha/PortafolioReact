@@ -10,7 +10,7 @@ const Proyectos = () => {
   return (
     <>
       {loader ? (<Loader />) : (
-        <div className='w-full p-5 h-full'>
+        <div className='w-full p-5 h-full md:h-screen'>
         <h1 className="text-white text-center md:text-5xl font-bold mb-4"><span className="text-red-600">[</span> Mis Proyectos <span className="text-red-600">]</span></h1>
         <div className='grid md:grid-cols-3 gap-8 mt-10 sm:mx-8'> 
   
