@@ -28,7 +28,7 @@ const Home = () => {
           <h1 className="text-white md:text-5xl font-bold mb-2">
             Desarrollador Web
           </h1>
-          <h2 className="text-slate-300">Desarrolador FronEnd</h2>
+          <h2 className="text-slate-300">Programador</h2>
           <a
             href="https://wa.me/593983841134"
             target="_blank"

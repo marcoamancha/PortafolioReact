@@ -10,9 +10,9 @@ const Proyectos = () => {
   return (
     <>
       {loader ? (<Loader />) : (
-        <div className='w-full p-5 h-full md:h-screen'>
-        <h1 className="text-white text-center md:text-5xl font-bold mb-4"><span className="text-red-600">[</span> Mis Proyectos <span className="text-red-600">]</span></h1>
-        <div className='grid md:grid-cols-3 gap-8 mt-10 sm:mx-8'> 
+        <div className='w-full mt-2 h-full sm:h-screen'>
+        <h1 className="text-white text-center md:text-3xl font-bold mb-4"><span className="text-red-600">[</span> Mis Proyectos <span className="text-red-600">]</span></h1>
+        <div className='grid md:grid-cols-3 gap-4 mt-5 sm:mx-8'> 
   
           <div className='bg-slate-800 rounded-lg shadow-xl w-full'>
             <img className='block p-4 rounded-lg' src="/pyme.png" alt="pyme" />
