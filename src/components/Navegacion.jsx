@@ -8,7 +8,7 @@ const Navegacion = () => {
           M
         </h1>
         <h2 className="text-center font-bold pt-2">Marco Amancha</h2>
-        <h3 className="text-center pt-4 text-sm">Desarrollador Web</h3>
+        <h3 className="text-center pt-4 text-sm">Portafolio Web</h3>
       </div>
       <div className="py-8">
         <NavLink
