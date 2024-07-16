@@ -1,25 +1,32 @@
-import { useState } from "react";
-import Typical from "react-typical";
-import Loader from "../components/Loader";
+import React, { useState, useEffect } from 'react';
+import { Typewriter } from 'react-simple-typewriter';
+import Loader from '../components/Loader';
 
 const Home = () => {
-  
   const [loader, setLoader] = useState(true);
-  setTimeout(() => {
-    setLoader(false);
-  }, 2000);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoader(false);
+    }, 2000);
+    return () => clearTimeout(timer); // Cleanup the timer
+  }, []);
 
   return (
-    <>
+    <div className="grid content-center justify-center px-4 w-full h-screen">
       {loader ? (
         <Loader />
       ) : (
-        <div className="grid content-center justify-center w-full h-screen">
+        <div>
           <h1 className="text-white md:text-5xl font-bold mb-2">
-            <Typical
-              steps={["Hola,", 3000, "Saludos,", 3000]}
-              wrapper="p"
-              loop={Infinity}
+            <Typewriter
+              words={['Hola,', 'Saludos,']}
+              loop={0} // Infinite loop
+              cursor
+              cursorStyle='_'
+              typeSpeed={10}
+              deleteSpeed={100}
+              delaySpeed={3000}
             />
           </h1>
           <h1 className="text-white md:text-5xl font-bold mb-2">
@@ -28,7 +35,7 @@ const Home = () => {
           <h1 className="text-white md:text-5xl font-bold mb-2">
             Desarrollador de software
           </h1>
-          <h2 className="text-slate-200">Ingeniero en sistemas</h2>
+          <h2 className="my-4 text-slate-200">Ingeniero en sistemas</h2>
           <a
             href="https://wa.me/593983841134"
             target="_blank"
@@ -38,7 +45,7 @@ const Home = () => {
           </a>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
